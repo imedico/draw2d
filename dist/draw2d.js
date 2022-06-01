@@ -6761,7 +6761,6 @@ _packages2.default.Canvas = Class.extend(
 
     // avoid the "highlighting" in iPad, iPhone if the user tab/touch on the canvas.
     // .... I didn't like this.
-    this.html.css({ "-webkit-tap-highlight-color": "rgba(0,0,0,0)" });
 
     // Drag&Drop handling from foreign DIV into the Canvas
     // Only available in combination with jQuery-UI
@@ -6812,6 +6811,8 @@ _packages2.default.Canvas = Class.extend(
       this.paper = Raphael(canvasId, this.getWidth(), this.getHeight());
     }
     this.paper.canvas.style.position = "absolute";
+    this.paper.canvas.style["left"] = "-" + canvasId.offsetLeft + "px";
+    this.paper.canvas.style["top"] = "-" + canvasId.offsetTop + "px";
 
     // Status handling
     //
