@@ -213,6 +213,22 @@
           "default": "",
           "optional": "",
           "nullable": ""
+        },
+        {
+          "name": "shiftKey",
+          "type": "Boolean",
+          "description": "<p>true if the shift key has been pressed during this event</p>",
+          "default": "",
+          "optional": "",
+          "nullable": ""
+        },
+        {
+          "name": "ctrlKey",
+          "type": "Boolean",
+          "description": "<p>true if the ctrl key has been pressed during the event</p>",
+          "default": "",
+          "optional": "",
+          "nullable": ""
         }
       ],
       "inherited": false,
