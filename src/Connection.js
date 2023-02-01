@@ -762,8 +762,6 @@ draw2d.Connection = draw2d.shape.basic.PolyLine.extend(
       let p1 = this.lineSegments.get(this.lineSegments.getSize() - 1).end
       let p2 = this.lineSegments.get(this.lineSegments.getSize() - 1).start
 
-<<<<<<< HEAD
-=======
       // Since the points are too close to each other in a spline routing, an 
       // angle is obtained which does not correspond to the optical impression. 
       // In this case, a point is taken which is a little further away 
@@ -772,7 +770,6 @@ draw2d.Connection = draw2d.shape.basic.PolyLine.extend(
         p2 = this.lineSegments.get(this.lineSegments.getSize() - 5)?.end ?? p2
       }
 
->>>>>>> links
       let length = Math.sqrt((p1.x - p2.x) * (p1.x - p2.x) + (p1.y - p2.y) * (p1.y - p2.y))
       let angle = -(180 / Math.PI) * Math.asin((p1.y - p2.y) / length)
 
